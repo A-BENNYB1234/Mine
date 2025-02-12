@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine?</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fce4ec;
+      transition: background-color 0.3s;
+      overflow: hidden;
+      min-height: 100vh;
+    }
+
+    body.dark-mode {
+      background-color: #263238;
+      color: white;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 20px;
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.5;
+      z-index: 0;
+    }
+
+    .cute-image {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    #noBtn,
+    #yesBtn {
+      transition: all 0.3s ease;
+    }
+
+    .controls {
+      position: fixed;
+      top: 20px;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-100px) rotate(180deg); }
+      100% { transform: translateY(0) rotate(360deg); }
+    }
+
+    .celebration {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(252, 228, 236, 0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .dark-mode .celebration {
+      background: rgba(38, 50, 56, 0.9);
+    }
+
+    .bounce {
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .language-btn {
+      background: none;
+      border: 1px solid #ff4081;
+      color: #ff4081;
+      padding: 5px 15px;
+      border-radius: 20px;
+      margin: 0 5px;
+    }
+
+    .language-btn.active {
+      background: #ff4081;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Controls -->
+  <div class="controls d-flex justify-content-between px-4">
+    <button onclick="toggleMode()" class="btn btn-outline-primary">🌙/☀️</button>
+    <div>
+      <button onclick="changeLanguage('en')" class="language-btn active">English</button>
+      <button onclick="changeLanguage('pidgin')" class="language-btn">Pidgin</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+    <!-- Updated GIF image inserted below -->
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW04OHFwdDBmeG5wOGNicjl1N2JsbDQxazhraTN1cHBrNmlqbWw3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MpeWJ9JyTyOm4/giphy.gif" alt="Cute Character" class="cute-image mb-4" />
+
+    <h1 class="text-center mb-4" id="mainQuestion">How far, you go like be my Val?</h1>
+
+    <p class="text-center mb-4" id="message">I promise say e go sweet, pick Yes!</p>
+
+    <div id="buttonContainer" class="position-relative d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
+      <button id="yesBtn" class="btn btn-success btn-lg mx-2">YES 💖</button>
+      <button id="noBtn" class="btn btn-danger btn-lg mx-2">NO 😢</button>
+    </div>
+  </div>
+
+  <!-- Celebration Screen -->
+  <div class="celebration" id="celebration">
+    <h1 class="text-center mb-4">Yay! You made me so happy! 🎉</h1>
+    <p id="stubborn-text" class="text-center"></p>
+    <div class="hearts-container">
+      ❤️ ❤️ ❤️ ❤️ ❤️
+    </div>
+  </div>
+
+  <script>
+    let noCount = 0;
+    let yesBtnSize = 1;
+    let noBtnSize = 1;
+    const yesBtn = document.getElementById('yesBtn');
+    const noBtn = document.getElementById('noBtn');
+    const message = document.getElementById('message');
+    let currentLang = 'en';
+
+    const translations = {
+      en: {
+        question: "Will you be my Valentine?",
+        messages: [
+          "I promise it will be sweet, pick Yes!",
+          "Don't leave me hanging, pick Yes!",
+          "I believe in us, pick Yes!",
+          "Why are you being so stubborn? 😢",
+          "You're breaking my heart 💔",
+          "Last chance! 🥺"
+        ],
+        yes: "YES 💖",
+        no: "NO 😢",
+        success: "Yay! You made me so happy! 🎉",
+        stubborn: "But why were you so stubborn at first? 😏"
+      },
+      pidgin: {
+        question: "How far, you go like be my Val?",
+        messages: [
+          "I promise say e go sweet, pick Yes!",
+          "No leave me hanging, pick Yes!",
+          "I believe you fit do am, pick Yes!",
+          "Why you dey do like this? 😢",
+          "See as you dey break my heart 💔",
+          "Last chance o! 🥺"
+        ],
+        yes: "YES 💖",
+        no: "NO 😢",
+        success: "Ayy! You don make me happy well well! 🎉",
+        stubborn: "But why you dey form since? 😏"
+      }
+    };
+
+    // Create floating hearts
+    function createHearts() {
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDelay = Math.random() * 5 + 's';
+        document.body.appendChild(heart);
+      }
+    }
+
+    function moveNoButton() {
+      noCount++;
+
+      // Update button sizes
+      yesBtnSize = Math.min(yesBtnSize + 0.2, 2);
+      noBtnSize = Math.max(noBtnSize - 0.1, 0.5);
+      yesBtn.style.transform = `scale(${yesBtnSize})`;
+      noBtn.style.transform = `scale(${noBtnSize})`;
+
+      // Change the positioning mode to fixed so we can use viewport coordinates
+      noBtn.style.position = 'fixed';
+
+      // Get YES button's current position (relative to the viewport)
+      const yesRect = yesBtn.getBoundingClientRect();
+      const yesCenterX = yesRect.left + yesRect.width / 2;
+      const yesCenterY = yesRect.top + yesRect.height / 2;
+
+      // Define the min and max distance for the NO button from the YES button
+      const minDistance = 80;  // Minimum gap (to avoid overlapping)
+      const maxDistance = 150; // Maximum distance from YES button
+      const distance = Math.random() * (maxDistance - minDistance) + minDistance;
+      const angle = Math.random() * 2 * Math.PI;
+
+      // Calculate new coordinates around the YES button
+      let newX = yesCenterX + distance * Math.cos(angle) - noBtn.offsetWidth / 2;
+      let newY = yesCenterY + distance * Math.sin(angle) - noBtn.offsetHeight / 2;
+
+      // Ensure the button stays within the viewport
+      newX = Math.max(0, Math.min(newX, window.innerWidth - noBtn.offsetWidth));
+      newY = Math.max(0, Math.min(newY, window.innerHeight - noBtn.offsetHeight));
+
+      // Apply new position
+      noBtn.style.left = newX + 'px';
+      noBtn.style.top = newY + 'px';
+
+      // Update message
+      const messages = translations[currentLang].messages;
+      message.textContent = messages[Math.min(noCount - 1, messages.length - 1)];
+    }
+
+    function handleYesClick() {
+      const celebration = document.getElementById('celebration');
+      const stubbornText = document.getElementById('stubborn-text');
+
+      celebration.style.display = 'flex';
+      if (noCount > 0) {
+        stubbornText.textContent = translations[currentLang].stubborn;
+      }
+    }
+
+    function toggleMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function changeLanguage(lang) {
+      currentLang = lang;
+      document.getElementById('mainQuestion').textContent = translations[lang].question;
+      message.textContent = translations[lang].messages[Math.min(noCount, translations[lang].messages.length - 1)];
+
+      // Update language button active states
+      document.querySelectorAll('.language-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase().includes(lang) || (lang === 'en' && btn.textContent.toLowerCase().includes('english'))) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    // Initialize
+    createHearts();
+    noBtn.addEventListener('click', moveNoButton);
+    yesBtn.addEventListener('click', handleYesClick);
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
