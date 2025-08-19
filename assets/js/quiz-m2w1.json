@@ -1,0 +1,159 @@
+{
+  "questions": [
+    {
+      "q": "What are legal frameworks in cybersecurity primarily designed to do?",
+      "c": [
+        "Entertain users online",
+        "Protect digital data and ensure privacy",
+        "Build faster computers",
+        "Design new social media apps"
+      ],
+      "a": 1
+    },
+    {
+      "q": "Which of these is an example of data protection law?",
+      "c": ["GDPR", "CPU", "HTML", "Python"],
+      "a": 0
+    },
+    {
+      "q": "HIPAA is a regulation that applies to which industry?",
+      "c": ["Finance", "Healthcare", "Education", "E-commerce"],
+      "a": 1
+    },
+    {
+      "q": "PCI DSS is mainly concerned with what type of data?",
+      "c": ["Payment card data", "Weather reports", "Movie reviews", "Passwords only"],
+      "a": 0
+    },
+    {
+      "q": "What do legal frameworks balance in cybersecurity?",
+      "c": ["Speed and cost", "Individual rights and organizational responsibilities", "Hardware and software", "Colors and themes"],
+      "a": 1
+    },
+    {
+      "q": "Which major attack highlighted the importance of GDPR?",
+      "c": ["Stuxnet", "WannaCry (2017)", "Heartbleed", "SolarWinds"],
+      "a": 1
+    },
+    {
+      "q": "What happens if an organization doesn’t comply with laws like GDPR?",
+      "c": ["Nothing happens", "They receive praise", "They face legal liabilities and penalties", "They get free software"],
+      "a": 2
+    },
+    {
+      "q": "Intellectual property rights protect what?",
+      "c": ["Physical fitness", "Ideas, inventions, and creative work", "Cooking recipes only", "Sports scores"],
+      "a": 1
+    },
+    {
+      "q": "Why are ethical considerations important in cybersecurity?",
+      "c": ["To keep hackers entertained", "To maintain trust and fairness", "To reduce internet bills", "To increase screen brightness"],
+      "a": 1
+    },
+    {
+      "q": "What does CCPA stand for?",
+      "c": ["California Consumer Privacy Act", "Cybersecurity Consumer Protection Agreement", "Central Computer Privacy Access", "Cloud Computing Protection Act"],
+      "a": 0
+    },
+    {
+      "q": "Which of the following is an industry-specific regulation?",
+      "c": ["HIPAA", "GDPR", "CCPA", "None"],
+      "a": 0
+    },
+    {
+      "q": "GDPR requires organizations to notify about breaches within how many hours?",
+      "c": ["72 hours", "1 week", "24 hours", "1 month"],
+      "a": 0
+    },
+    {
+      "q": "Professional issues in cybersecurity often involve what?",
+      "c": ["Ethical conduct and compliance", "Cooking meals", "Building furniture", "Driving safely"],
+      "a": 0
+    },
+    {
+      "q": "The WannaCry ransomware spread through which vulnerability?",
+      "c": ["Outdated Windows systems", "Mac password leaks", "iPhone jailbreak", "Linux rootkits"],
+      "a": 0
+    },
+    {
+      "q": "What is the purpose of PCI DSS?",
+      "c": ["Protecting healthcare records", "Protecting credit/debit card data", "Protecting cloud passwords", "Protecting government secrets"],
+      "a": 1
+    },
+    {
+      "q": "What is one ethical concern for professionals in cybersecurity?",
+      "c": ["Fair use of data", "Winning games", "Faster downloads", "Better screen size"],
+      "a": 0
+    },
+    {
+      "q": "Which regulation is specific to California, USA?",
+      "c": ["GDPR", "CCPA", "HIPAA", "PCI DSS"],
+      "a": 1
+    },
+    {
+      "q": "Which framework ensures privacy rights for EU citizens?",
+      "c": ["GDPR", "CCPA", "HIPAA", "NIST"],
+      "a": 0
+    },
+    {
+      "q": "Why do organizations follow legal frameworks?",
+      "c": ["To make friends", "To comply with laws and avoid penalties", "To decorate websites", "To increase screen size"],
+      "a": 1
+    },
+    {
+      "q": "What is a legal liability in cybersecurity?",
+      "c": ["A reward for compliance", "A penalty or fine for non-compliance", "An award for best app", "A free internet subscription"],
+      "a": 1
+    },
+    {
+      "q": "Who does HIPAA mainly protect?",
+      "c": ["Doctors", "Healthcare patients", "Teachers", "Students"],
+      "a": 1
+    },
+    {
+      "q": "Why is breach notification important?",
+      "c": ["To hide leaks", "To inform affected people quickly", "To improve marketing", "To update colors"],
+      "a": 1
+    },
+    {
+      "q": "Which framework is critical for payment security?",
+      "c": ["PCI DSS", "GDPR", "HIPAA", "ISO 9001"],
+      "a": 0
+    },
+    {
+      "q": "What does GDPR mainly regulate?",
+      "c": ["Data protection and privacy in the EU", "Car insurance", "Airline safety", "Cooking shows"],
+      "a": 0
+    },
+    {
+      "q": "What type of attack was WannaCry?",
+      "c": ["DDoS", "Ransomware", "Phishing", "Spyware"],
+      "a": 1
+    },
+    {
+      "q": "Which of these is NOT a cybersecurity legal framework?",
+      "c": ["GDPR", "HIPAA", "HTML", "CCPA"],
+      "a": 2
+    },
+    {
+      "q": "What does compliance mean in cybersecurity?",
+      "c": ["Following rules and standards", "Ignoring laws", "Copying homework", "Gaming online"],
+      "a": 0
+    },
+    {
+      "q": "Which regulation ensures credit card security worldwide?",
+      "c": ["PCI DSS", "GDPR", "HIPAA", "FERPA"],
+      "a": 0
+    },
+    {
+      "q": "What’s the main reason for ethical standards in cybersecurity?",
+      "c": ["To ensure trust and responsibility", "To lower Wi-Fi bills", "To make games fun", "To change UI themes"],
+      "a": 0
+    },
+    {
+      "q": "What is the effect of not complying with HIPAA?",
+      "c": ["Organizations face fines and legal actions", "Nothing", "Better hospital food", "Free training"],
+      "a": 0
+    }
+  ]
+}
