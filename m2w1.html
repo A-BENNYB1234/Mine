@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Circle 8 — CYS 502 • Month 2, Week 1</title>
+  <meta name="description" content="Circle 8 — Month 2 Week 1 lecture (verbatim) with graded quiz. Offline, no backend." />
+  <!-- Bootstrap + Site Theme -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <style>
+    /* Page-specific minimal helpers (keeps global theme intact) */
+    .card-panel{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.12); border-radius:16px}
+    .lesson-body :where(h1,h2,h3,h4){color:#dfe6f5}
+    .lesson-body p, .lesson-body li{color:#e9eef5}
+    .lesson-body a{color:#9cdad0}
+    .badge-tag{background:rgba(255,255,255,.08); color:#e9eef5; border-radius:999px}
+    .quiz-q{border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:1rem; background:rgba(255,255,255,.02)}
+    .correct{border-color: rgba(24,201,100,.5)!important}
+    .incorrect{border-color: rgba(255,80,80,.6)!important}
+  </style>
+</head>
+<body class="app-bg">
+  <!-- Optional auth guard can be added by including assets/js/storage.js and a small inline redirect. -->
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top app-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="home.html"><span class="logo-dot"></span><span>Circle 8</span></a>
+      <span class="navbar-text text-secondary small">CYS 502 • Month 2 → Week 1</span>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-lg-5">
+    <!-- Header & Progress -->
+    <div class="row g-4 align-items-center mb-1">
+      <div class="col-12 col-lg-8">
+        <h1 class="h3 fw-bold mb-1">Month 2 — Week 1</h1>
+        <p class="text-secondary mb-0">Key Legislation & Standards • Frameworks & CSF • Ethics • Privacy • Policy • Professional Orgs • Awareness</p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card-panel p-3">
+          <div class="d-flex align-items-center justify-content-between">
+            <span class="small text-secondary">Your Progress (this page)</span>
+            <span class="badge badge-tag" id="bestBadge">Best: 0%</span>
+          </div>
+          <div class="progress mt-2" role="progressbar" aria-label="Page progress" aria-valuemin="0" aria-valuemax="100">
+            <div id="progressBar" class="progress-bar" style="width: 0%"></div>
+          </div>
+          <div class="d-flex gap-2 mt-2">
+            <button class="btn btn-sm btn-brand" id="markReadBtn"><i class="bi bi-check2-square"></i> Mark lesson read</button>
+            <button class="btn btn-sm btn-ghost" id="resetPageBtn"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lesson Content (VERBATIM) -->
+    <section class="card-panel p-3 p-lg-4 mb-4 lesson-body" id="lesson">
+      <!-- The following block is inserted verbatim from your source file. -->
+      <div id="verbatim">
+        <p style="margin-top:0pt; margin-bottom:15pt; line-height:normal; border-bottom:1pt solid #4f81bd; padding-bottom:4pt; font-size:26pt">
+          <span style="font-family:Calibri; letter-spacing:0.25pt; color:#17365d">Month 2 - Week 1 (Simplified Cybersecurity Notes)</span>
+        </p>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt">
+          <span style="font-family:Calibri; color:#365f91">1. Introduction to Key Legislation and Regulations, Compliance Requirements and Standards</span>
+        </h1>
+        <h2 style="margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:13pt">
+          <span style="font-family:Calibri; color:#4f81bd">Introduction to Key Legislation and Regulations</span>
+        </h2>
+        <p style="margin-top:0pt; margin-bottom:10pt">Core Areas Covered:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Overview of legal frameworks → Rules that guide cybersecurity practices.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Ethical considerations → Thinking about right vs wrong in cybersecurity.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Professional issues → Responsibilities of professionals in the field.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Definition of Legal Frameworks in Cybersecurity:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Establish rules and regulations to protect digital data, ensure privacy, and maintain trust.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Provide guidelines for handling sensitive data, ensuring compliance, and reducing cyber threats.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Balance individual rights (privacy) with organizational responsibilities (protecting data).</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Key Areas of Legal Frameworks:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Data protection → GDPR, CCPA</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Industry-specific regulations → HIPAA (healthcare), PCI DSS (payment cards)</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Intellectual property rights → Protect ownership of ideas, software, inventions.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Importance and Impact:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Ensure proper security controls and ethical standards.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Define legal liabilities and penalties for non-compliance.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Case Study: WannaCry 2017 ransomware attack showed why GDPR compliance, breach notifications, fines, and stronger protections are needed.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Legislations like GDPR, HIPAA, and CCPA set standards for protecting sensitive information and enforcing accountability.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Relevant across all cybersecurity careers, since they guide risk identification, assessment, and management.</span></li>
+        </ul>
+        <h2 style="margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:13pt"><span style="font-family:Calibri; color:#4f81bd">Compliance Requirements and Standards</span></h2>
+        <p style="margin-top:0pt; margin-bottom:10pt">Definition of Security Standards:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Mandatory controls guiding organizational security initiatives.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Based on policies to stop unauthorized access, theft, and cyber threats.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Globally used to ensure compliance with legal/regulatory requirements.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Creators of Cybersecurity Standards:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Industry experts, professional bodies, and governmental institutes.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Examples of Organizations that Create Standards:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• ISO/IEC → Established 1947. International standards for security, safety, and reliability. Notable: ISO/IEC 27000 (security), ISO 9000 (quality).</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• NIST → Established 1901. US body that develops frameworks like NIST CSF (mandatory for US federal agencies).</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• PCI SSC → Established 2006 by Visa, Mastercard, Amex, Discover, JCB. Protects card data with PCI DSS.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">General Components of Cybersecurity Standards:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Technical controls, organizational controls, compliance guidelines, physical measures.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Detailed Components:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Technical: MFA, encryption, firewalls, monitoring, patching.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Organizational: Policies, risk management, employee training, incident response, vendor compliance.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Compliance: Understand laws (GDPR, HIPAA, PCI DSS), audits, documentation, incident reporting.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Physical: Access control (biometrics/cards), CCTV, locks/fences, fire suppression, power backup.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Examples of Cybersecurity Standards:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• ISO/IEC 27001 (ISMS): Global best practice for information security. Risk management approach to protect CIA (Confidentiality, Integrity, Availability). Versions: 2005, 2013, 2022.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• PCI DSS: Payment Card Industry Data Security Standard. Created 2006, protects cardholder data. 6 core goals, 12 requirements, mandatory for card-handling businesses.</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">2. Cybersecurity Frameworks, CSF Core Functions and Cybersecurity Legislations</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Cybersecurity Frameworks: Guidelines and best practices to manage risks. Usually voluntary, but revised over time.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Creators: Industry organizations, government bodies, associations.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Examples of Framework Creators:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• NIST → NIST Cybersecurity Framework (CSF), Risk Management Framework (RMF).</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• CISA → US agency, collaborates with NIST, focuses on infrastructure protection.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• AICPA → Developed SOC 2 (auditing/compliance framework).</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• ISACA → Created COBIT (governance framework).</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• CSA → Cloud Controls Matrix (CCM).</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• CIS → Developed CIS Critical Controls, CIS Benchmarks.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Examples of Frameworks:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• NIST CSF 2.0, RMF, SOC 2, ENISA frameworks, COBIT, Cloud Controls Matrix.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">NIST CSF Core Functions:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Govern (GV) → Governance, risk strategy, policies.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Identify (ID) → Assets, risks, improvements.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Protect (PR) → Safeguards (access, training, data security).</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Detect (DE) → Monitoring, analysis of incidents.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Respond (RS) → Incident management, communication, mitigation.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Recover (RC) → Service restoration, recovery communication.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Cybersecurity Legislations: Laws protecting data. Examples: FTC Act (US), Nigerian Cybercrimes Act 2015, EU Cyber Resilience Act.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Regulations: Detailed enforceable rules like HIPAA, GDPR.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Key Principles: Consent, privacy, security, accountability, transparency, purpose limitation, fairness, control, protection against harm.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">GDPR (EU Law): Strongest global regulation. Data subject rights include: informed, access, rectify, object, erasure, portability, restrict processing.</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">3. Introduction to Ethical Hacking and Penetration Testing, Key Ethical Considerations</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Ethical Hacking: Authorized experts (white hats) hired to test systems legally. Find vulnerabilities before attackers.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Types of Hackers: White hat, black hat, gray hat, script kiddies, hacktivists.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Penetration Testing: Structured, authorized attempts to exploit vulnerabilities. Types: Black box, white box, gray box.</span></li>
+        </ul>
+        <p style="margin-top:0pt; margin-bottom:10pt">Key Ethical Considerations:</p>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Authorization → Written permission required.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Transparency → Full communication during testing.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Privacy → Protect sensitive information.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Non-disruption → Avoid outages or harm.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Integrity → Report honestly.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Compliance → Follow laws (GDPR, HIPAA).</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">• Reporting → Clear, unbiased reports and recommendations.</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">4. Privacy and Data Protection Ethics</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Principles: Handle data responsibly, access only what's necessary, respect privacy boundaries.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Responsible Disclosure: Hackers report privately before public disclosure, often under NDA.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Legal Compliance: Follow GDPR, HIPAA, CCPA, etc. Non-compliance leads to penalties.</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">5. Cybersecurity Policy Development</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Policy = Document outlining rules to protect confidentiality, integrity, availability of data.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Purpose = Define what to protect, threats, and rules.</span></li>
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Benefits = Clear standards, regulatory compliance.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Challenges = Awareness gaps, balance between security &amp; usability, monitoring &amp; enforcement.</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">6. Roles of Professional Organizations</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">They create standards, promote best practices, provide certifications, training, and advocacy.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Examples: ISC2 (CISSP, CCSP), ISACA (CISA, CISM, CGEIT, CRISC), SANS (GIAC certifications).</span></li>
+        </ul>
+        <h1 style="margin-top:24pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><span style="font-family:Calibri; color:#365f91">7. Public Awareness and Advocacy in Cybersecurity</span></h1>
+        <ul type="disc" style="margin:0pt; padding-left:0pt">
+          <li style="margin-left:10.06pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Public Awareness = Education campaigns. Examples: Cybersecurity Awareness Month, Stop. Think. Connect.</span></li>
+          <li style="margin-left:10.06pt; margin-bottom:10pt; padding-left:7.94pt; font-family:serif"><span style="font-family:Cambria">Advocacy = Influence policy makers, promote stronger laws, encourage compliance.</span></li>
+        </ul>
+     </div>
+    </section>
+
+    <!-- Quiz Section (data loaded from /data/m2w1-quiz.json by assets/js/week.js) -->
+    <section class="card-panel p-3 p-lg-4" id="quiz">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <h2 class="h5 mb-0"><i class="bi bi-ui-checks-grid"></i> Week 1 Quiz</h2>
+        <span class="badge badge-tag">30 questions total • 10 shown per attempt</span>
+      </div>
+      <p class="text-secondary">Click <em>Start Quiz</em> to get a fresh random set of 10 questions. Submit to grade and save your score.</p>
+
+      <div class="d-flex gap-2 mb-3">
+        <button class="btn btn-brand" id="startQuizBtn"><i class="bi bi-play-fill"></i> Start Quiz</button>
+        <button class="btn btn-ghost" id="retryBtn" disabled><i class="bi bi-shuffle"></i> New Set</button>
+      </div>
+
+      <div id="quizArea" class="d-grid gap-3"></div>
+
+      <div class="d-flex align-items-center justify-content-between mt-3">
+        <button class="btn btn-brand" id="submitBtn" disabled><i class="bi bi-award"></i> Submit</button>
+        <div class="text-end">
+          <div class="small text-secondary">Last score: <span id="lastScore">0%</span> • Best: <span id="bestScore">0%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-secondary small mt-4">
+      Developer: <strong>Bayo (veinarous)</strong> • Lecture resources: <strong>Halima (P.lima)</strong>
+    </footer>
+  </main>
+
+  <!-- Toast -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:1080">
+    <div id="toast" class="toast text-bg-dark" role="status" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div id="toastMsg" class="toast-body">Message</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS (external only) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/week.js"></script>
+</body>
+</html>

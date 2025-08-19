@@ -1,0 +1,41 @@
+/* Circle 8 Professional Theme */
+:root{
+  --bg:#0f1320;
+  --panel:#151a2b;
+  --text:#e9eef5;
+  --muted:#9aa4b2;
+  --brand:#6ee7d2;
+  --brand-2:#a78bfa;
+  --accent:#ff8fab;
+  --radius:16px;
+  --shadow:0 12px 30px rgba(0,0,0,.35);
+}
+html,body{height:100%;}
+body{color:var(--text); background: radial-gradient(1000px 600px at 10% 0%, #1a2140 0%, #0f1320 60%) fixed;}
+
+.auth-bg{display:flex;}
+.auth-card{
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 420px; width: 100%;
+}
+.logo-dot{width:14px;height:14px;border-radius:50%; margin:0 auto 8px;
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  box-shadow:0 0 0 .25rem rgba(167,139,250,.18)}
+
+.btn-brand{--bs-btn-color:#0e1224; --bs-btn-bg:var(--brand); --bs-btn-border-color:transparent;
+  --bs-btn-hover-bg:#58d8c2; --bs-btn-hover-border-color:transparent; border-radius:12px;}
+.btn-ghost{background:transparent; color:var(--text); border:1px solid rgba(255,255,255,.2); border-radius:12px;}
+.btn-ghost:hover{border-color: rgba(255,255,255,.4)}
+
+.form-control, .input-group-text{color:var(--text)!important;}
+.form-control::placeholder{color:#c3c8d1; opacity:.6}
+:focus-visible{outline:2px solid var(--brand); outline-offset:2px;}
+.toast{border:1px solid rgba(255,255,255,.12)}
+
+/* App (home) */
+.app-nav{background:rgba(10,14,28,.6); backdrop-filter:saturate(140%) blur(8px);}
+.app-bg{background: radial-gradient(1200px 700px at 0% 0%, rgba(167,139,250,.08), transparent 50%), radial-gradient(1200px 700px at 100% 0%, rgba(110,231,210,.08), transparent 50%), var(--bg);}
+.month-box{background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.12);}
